@@ -1,13 +1,29 @@
 defmodule Lamina.Dashboard.MixProject do
   use Mix.Project
 
+  @version "0.1.0"
+  @description "A Phoenix LiveDashboard page for inspecting your Lamina configurations"
+
   def project do
     [
       app: :lamina_dashboard,
-      version: "0.1.0",
-      elixir: "~> 1.12",
+      version: @version,
+      description: @description,
+      elixir: "~> 1.11",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      package: package(),
+      elixirc_paths: elixirc_paths(Mix.env())
+    ]
+  end
+
+  def package do
+    [
+      maintainers: ["James Harton <james@harton.nz>"],
+      licenses: ["Hippocratic"],
+      links: %{
+        "Source" => "https://gitlab.com/jimsy/lamina_dashboard"
+      }
     ]
   end
 
@@ -22,8 +38,12 @@ defmodule Lamina.Dashboard.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      # {:dep_from_hexpm, "~> 0.3.0"},
-      # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
+      {:credo, "~> 1.5", only: ~w[dev test]a},
+      {:ex_doc, ">= 0.0.0", only: ~w[dev test]a},
+      {:git_ops, "~> 2.3", only: ~w[dev test]a, runtime: false}
     ]
   end
+
+  defp elixirc_paths(:test), do: ["lib", "test/support"]
+  defp elixirc_paths(_), do: ["lib"]
 end
