@@ -126,14 +126,14 @@ release-gitlab:
       --tag-name "v${APP_VERSION}" \
       --assets-link "{\"name\":\"${APP_NAME}-${APP_VERSION}.tar.gz\",\"url\":\"${PACKAGE_REGISTRY_URL}/${APP_NAME}/${APP_VERSION}/${APP_NAME}-${APP_VERSION}.tar.gz\"}" \
       --assets-link "{\"name\":\"${APP_NAME}-${APP_VERSION}-docs.tar.gz\",\"url\":\"${PACKAGE_REGISTRY_URL}/${APP_NAME}/${APP_VERSION}/${APP_NAME}-${APP_VERSION}-docs.tar.gz\"}"
-# not ready for hex releases yet.
-# release-hex:
-#   image: elixir:latest
-#   dependencies:
-#     - build
-#   stage: release
-#   only:
-#     - tags
-#     - /^v\d+\.\d+\.\d+(-\w+)?$/
-#   script:
-#     - mix hex.publish --yes
+
+release-hex:
+  image: elixir:latest
+  dependencies:
+    - build
+  stage: release
+  only:
+    - tags
+    - /^v\d+\.\d+\.\d+(-\w+)?$/
+  script:
+    - mix hex.publish --yes
