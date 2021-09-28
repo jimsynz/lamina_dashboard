@@ -39,7 +39,11 @@ defmodule Lamina.Dashboard.MixProject do
     [
       {:credo, "~> 1.5", only: ~w[dev test]a},
       {:ex_doc, ">= 0.0.0", only: ~w[dev test]a},
-      {:git_ops, "~> 2.3", only: ~w[dev test]a, runtime: false}
+      {:git_ops, "~> 2.3", only: ~w[dev test]a, runtime: false},
+      {:jason, "~> 1.0", only: ~w[dev test]a},
+      {:lamina, "~> 0.4"},
+      {:phoenix_live_dashboard, "~> 0.5.1", optional: true},
+      {:phoenix_live_reload, "~> 1.2", only: :dev}
     ]
   end
 
