@@ -42,8 +42,12 @@ defmodule Lamina.Dashboard.Remote do
   @doc false
   @spec do_list_servers :: [module]
   def do_list_servers do
-    ServerRegistry.all_servers()
-    |> Enum.sort()
+    if function_exported?(ServerRegistry, :all_servers, 0) do
+      ServerRegistry.all_servers()
+      |> Enum.sort()
+    else
+      []
+    end
   end
 
   @doc false
