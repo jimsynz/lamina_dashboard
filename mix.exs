@@ -1,7 +1,7 @@
 defmodule Lamina.Dashboard.MixProject do
   use Mix.Project
 
-  @version "0.2.1"
+  @version "0.2.2"
   @description "A Phoenix LiveDashboard page for inspecting your Lamina configurations"
 
   def project do

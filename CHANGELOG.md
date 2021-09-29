@@ -5,6 +5,15 @@ See [Conventional Commits](Https://conventionalcommits.org) for commit guideline
 
 <!-- changelog -->
 
+## [v0.2.2](https://gitlab.com/jimsy/lamina_dashboard/compare/v0.2.1...v0.2.2) (2021-09-29)
+
+
+
+
+### Bug Fixes:
+
+* don't make apps explode if liveview isn't present.
+
 ## [v0.2.1](https://gitlab.com/jimsy/lamina_dashboard/compare/v0.2.0...v0.2.1) (2021-09-28)
 
 
