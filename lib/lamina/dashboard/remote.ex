@@ -13,6 +13,8 @@ defmodule Lamina.Dashboard.Remote do
   @spec list_servers(node) :: [module]
   def list_servers(node) do
     :rpc.call(node, __MODULE__, :do_list_servers, [])
+  rescue
+    _ -> []
   end
 
   @doc """
