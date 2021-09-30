@@ -5,6 +5,15 @@ See [Conventional Commits](Https://conventionalcommits.org) for commit guideline
 
 <!-- changelog -->
 
+## [v0.2.3](https://gitlab.com/jimsy/lamina_dashboard/compare/v0.2.2...v0.2.3) (2021-09-30)
+
+
+
+
+### Bug Fixes:
+
+* don't crash when lamina_dashboard isn't present on the remote node.
+
 ## [v0.2.2](https://gitlab.com/jimsy/lamina_dashboard/compare/v0.2.1...v0.2.2) (2021-09-29)
 
 
