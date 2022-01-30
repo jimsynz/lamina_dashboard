@@ -42,7 +42,7 @@ defmodule Lamina.Dashboard.MixProject do
       {:git_ops, "~> 2.4", only: ~w[dev test]a, runtime: false},
       {:jason, "~> 1.2", only: ~w[dev test]a},
       {:lamina, "~> 0.4"},
-      {:phoenix_live_dashboard, "~> 0.6.2", optional: true},
+      {:phoenix_live_dashboard, "~> 0.6.3", optional: true},
       {:phoenix_live_reload, "~> 1.3", only: :dev}
     ]
   end
