@@ -38,7 +38,7 @@ defmodule Lamina.Dashboard.MixProject do
   defp deps do
     [
       {:credo, "~> 1.6", only: ~w[dev test]a},
-      {:ex_doc, ">= 0.26.0", only: ~w[dev test]a},
+      {:ex_doc, ">= 0.28.0", only: ~w[dev test]a},
       {:git_ops, "~> 2.4", only: ~w[dev test]a, runtime: false},
       {:jason, "~> 1.2", only: ~w[dev test]a},
       {:lamina, "~> 0.4"},
