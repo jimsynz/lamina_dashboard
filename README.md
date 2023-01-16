@@ -18,7 +18,7 @@ dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:lamina_dashboard, "~> 0.2.3"}
+    {:lamina_dashboard, "~> 1.0.0"}
   ]
 end
 ```

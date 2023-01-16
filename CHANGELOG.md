@@ -5,6 +5,13 @@ See [Conventional Commits](Https://conventionalcommits.org) for commit guideline
 
 <!-- changelog -->
 
+## [v1.0.0](https://gitlab.com/jimsy/lamina_dashboard/compare/v0.2.3...v1.0.0) (2023-01-16)
+### Breaking Changes:
+
+* Relicense to HL3-FULL.
+
+
+
 ## [v0.2.3](https://gitlab.com/jimsy/lamina_dashboard/compare/v0.2.2...v0.2.3) (2021-09-30)
 
 
