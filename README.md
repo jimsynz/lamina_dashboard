@@ -1,6 +1,6 @@
 # Lamina.Dashboard
 
-[![pipeline status](https://gitlab.com/jimsy/lamina_dashboard/badges/main/pipeline.svg)](https://gitlab.com/jimsy/lamina_dashboard/commits/main)
+[![Build Status](https://drone.harton.nz/api/badges/james/lamina_dashboard/status.svg?ref=refs/heads/main)](https://drone.harton.nz/james/lamina_dashboard)
 [![Hex.pm](https://img.shields.io/hexpm/v/lamina_dashboard.svg)](https://hex.pm/packages/lamina_dashboard)
 [![Hippocratic License HL3-FULL](https://img.shields.io/static/v1?label=Hippocratic%20License&message=HL3-FULL&labelColor=5e2751&color=bc8c3d)](https://firstdonoharm.dev/version/3/0/full.html)
 
@@ -23,7 +23,7 @@ def deps do
 end
 ```
 
-Documentation for the latest release can be found on [HexDocs](https://hexdocs.pm/lamina) and for the `main` branch [here](https://jimsy.gitlab.io/lamina_dashboard/api-reference.html).
+Documentation for the latest release can be found on [HexDocs](https://hexdocs.pm/lamina).
 
 ## Integration with LiveDashboard
 
@@ -47,7 +47,7 @@ This software is licensed under the terms of the
 this package for the terms.
 
 This license actively proscribes this software being used by and for some
-industries, countries and activities.  If your usage of this software doesn't
+industries, countries and activities. If your usage of this software doesn't
 comply with the terms of this license, then [contact me](mailto:james@harton.nz)
 with the details of your use-case to organise the purchase of a license - the
 cost of which may include a donation to a suitable charity or NGO.
