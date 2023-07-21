@@ -55,13 +55,13 @@ defmodule Lamina.Dashboard.Remote do
   @doc false
   @spec do_list_config_keys(module) :: [atom]
   def do_list_config_keys(server) do
-    apply(server, :__lamina__, [:config_keys])
+    server.__lamina__.(:config_keys)
   end
 
   @doc false
   @spec do_list_providers(module) :: [{module, keyword}]
   def do_list_providers(server) do
-    apply(server, :__lamina__, [:providers])
+    server.__lamina__.(:providers)
   end
 
   @doc false
