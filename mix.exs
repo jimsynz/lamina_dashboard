@@ -13,7 +13,11 @@ defmodule Lamina.Dashboard.MixProject do
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       package: package(),
-      elixirc_paths: elixirc_paths(Mix.env())
+      elixirc_paths: elixirc_paths(Mix.env()),
+      docs: [
+        main: "readme",
+        extras: ["README.md", "CHANGELOG.md"]
+      ]
     ]
   end
 
@@ -22,7 +26,10 @@ defmodule Lamina.Dashboard.MixProject do
       maintainers: ["James Harton <james@harton.nz>"],
       licenses: ["HL3-FULL"],
       links: %{
-        "Source" => "https://harton.dev/james/lamina_dashboard"
+        "Source" => "https://harton.dev/james/lamina_dashboard",
+        "GitHub" => "https://github.com/jimsynz/lamina_dashboard",
+        "Changelog" => "https://docs.harton.nz/james/lamina_dashboard/changelog.html",
+        "Sponsor" => "https://github.com/sponsors/jimsynz"
       }
     ]
   end
@@ -37,8 +44,12 @@ defmodule Lamina.Dashboard.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:credo, "~> 1.6", only: ~w[dev test]a},
-      {:ex_doc, ">= 0.28.1", only: ~w[dev test]a},
+      {:credo, "~> 1.6", only: ~w[dev test]a, runtime: false},
+      {:dialyxir, "~> 1.4", only: ~w[dev test]a, runtime: false},
+      {:doctor, "~> 0.21", only: ~w[dev test]a, runtime: false},
+      {:ex_check, "~> 0.15", only: ~w[dev test]a, runtime: false},
+      {:ex_doc, "~> 0.30", only: ~w[dev test]a, runtime: false},
+      {:earmark, "~> 1.4", only: ~w[dev test]a, runtime: false},
       {:git_ops, "~> 2.4", only: ~w[dev test]a, runtime: false},
       {:jason, "~> 1.3", only: ~w[dev test]a},
       {:lamina, "~> 0.4"},

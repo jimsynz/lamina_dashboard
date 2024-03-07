@@ -1,6 +1,6 @@
 # Lamina.Dashboard
 
-[![Build Status](https://drone.harton.nz/api/badges/james/lamina_dashboard/status.svg?ref=refs/heads/main)](https://drone.harton.nz/james/lamina_dashboard)
+[![Build Status](https://drone.harton.dev/api/badges/james/lamina_dashboard/status.svg?ref=refs/heads/main)](https://drone.harton.dev/james/lamina_dashboard)
 [![Hex.pm](https://img.shields.io/hexpm/v/lamina_dashboard.svg)](https://hex.pm/packages/lamina_dashboard)
 [![Hippocratic License HL3-FULL](https://img.shields.io/static/v1?label=Hippocratic%20License&message=HL3-FULL&labelColor=5e2751&color=bc8c3d)](https://firstdonoharm.dev/version/3/0/full.html)
 
@@ -39,6 +39,12 @@ Once configured, you will be able to access `Lamina.Dashboard` at `/dashboard/la
 ## Distribution
 
 You can use `Lamina.Dashboard` to view the configuration on remote nodes by simply adding the `lamina_dashboard` package as a dependency of your remote nodes.
+
+## Github Mirror
+
+This repository is mirrored [on Github](https://github.com/jimsynz/lamina_dashboard)
+from it's primary location [on my Forejo instance](https://harton.dev/james/lamina_dashboard).
+Feel free to raise issues and open PRs on Github.
 
 ## License
 
