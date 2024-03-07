@@ -47,7 +47,7 @@ defmodule Lamina.Dashboard.MixProject do
       {:credo, "~> 1.6", only: ~w[dev test]a, runtime: false},
       {:dialyxir, "~> 1.4", only: ~w[dev test]a, runtime: false},
       {:doctor, "~> 0.21", only: ~w[dev test]a, runtime: false},
-      {:ex_check, "~> 0.15", only: ~w[dev test]a, runtime: false},
+      {:ex_check, "~> 0.16", only: ~w[dev test]a, runtime: false},
       {:ex_doc, "~> 0.30", only: ~w[dev test]a, runtime: false},
       {:earmark, "~> 1.4", only: ~w[dev test]a, runtime: false},
       {:git_ops, "~> 2.4", only: ~w[dev test]a, runtime: false},
