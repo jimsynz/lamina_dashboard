@@ -43,7 +43,7 @@ You can use `Lamina.Dashboard` to view the configuration on remote nodes by simp
 ## Github Mirror
 
 This repository is mirrored [on Github](https://github.com/jimsynz/lamina_dashboard)
-from it's primary location [on my Forejo instance](https://harton.dev/james/lamina_dashboard).
+from it's primary location [on my Forgejo instance](https://harton.dev/james/lamina_dashboard).
 Feel free to raise issues and open PRs on Github.
 
 ## License
