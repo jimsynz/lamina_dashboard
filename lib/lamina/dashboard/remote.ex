@@ -70,8 +70,7 @@ defmodule Lamina.Dashboard.Remote do
     sort_dir = if params.sort_dir == :asc, do: &<=/2, else: &>=/2
 
     all_rows =
-      server
-      |> apply(:__lamina__, [:config_keys])
+      server.__lamina__(:config_keys)
       |> Enum.map(fn config_key ->
         %{
           name: config_key,
